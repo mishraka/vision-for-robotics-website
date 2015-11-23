@@ -16,7 +16,13 @@ function findObjects(image_name){
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<!-- place upload form here for more uploads.-->
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select new image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+<br> <br>
 <?php
 $target_dir = "uploads/";
 # Add time generated suffix to the uploaded filename
